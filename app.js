@@ -1,7 +1,7 @@
 var fs = require('fs');
 var express = require('express');
 var app = express();
-app.use(express.static('doc'));
+app.set('port', (process.env.PORT || 5000));
 var x = 0;
 var jsonobj = fs.readFileSync('dati.json');
 var jaa = JSON.parse(jsonobj);
@@ -16,7 +16,7 @@ console.log("Nome: ",jaa.first_name[x]);
 console.log("Cognome: ", jaa.last_name[x]);
 fs.writeFileSync("dati.json", JSON.stringify(jaa));
 if(jaa.first_name[x] == "Emanuele" && jaa.last_name[x] == "Graziosi"){
-res.sendFile(__dirname + "/doc/log.html");
+res.sendFile(__dirname + "/log.html");
 }
 else{
 res.send('Salve ' + jaa.first_name[x] + " " + jaa.last_name[x]);
@@ -24,5 +24,4 @@ res.send('Salve ' + jaa.first_name[x] + " " + jaa.last_name[x]);
 x = x + 1;
 }
 )
-var server = app.listen(8081, "127.0.0.1");
-console.log("Server running at http://127.0.0.1:8081");
+app.listen(app.get('port'));
