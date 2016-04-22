@@ -4,7 +4,7 @@ var app = express();
 var x = 0;
 var jsonobj = fs.readFileSync('dati.json');
 var jaa = JSON.parse(jsonobj);
-app.get('/index.html', function(req, res){
+app.get('/', function(req, res){
 res.sendFile(__dirname + "/" + "index.html");
 }
 )
