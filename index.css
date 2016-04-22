@@ -1,0 +1,21 @@
+input{
+margin: 10px;
+}
+#sub{
+ height: 50px;
+  width: 70px;
+  background-color: lightslategrey;
+  position: relative;
+  left: 70px;
+  top: 20px;
+  color: white;
+}
+#input{
+  border: 1px solid black;
+  display: inline-block;
+  position: absolute;
+  left: 500px;
+  top: 100px;
+  padding: 50px;
+  background-color: #EBECED;
+}
