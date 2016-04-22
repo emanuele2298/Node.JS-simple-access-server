@@ -27,7 +27,7 @@ width: 200px;
 height: 200px;
 }
 body{
-background: lightblue url("Web-Design-Wallpapers.jpg") no-repeat fixed;
+background: lightblue url("Web-Design-Wallpapers.jpg") repeat-y fixed;
 }
 #reference{
 margin: auto;
