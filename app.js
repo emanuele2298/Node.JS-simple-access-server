@@ -13,7 +13,7 @@ res.sendFile(__dirname + "/" + "index.html");
 app.get('/process_get', function(req, res){
 jaa.user[x] = req.query.user;
 jaa.pw[x] = req.query.pw;
-console.log("Nome: ",jaa.first_name[x]);
+console.log("Nome: ",jaa.user[x]);
 console.log("Cognome: ", jaa.pw[x]);
 fs.writeFileSync("dati.json", JSON.stringify(jaa));
 if(jaa.user[x] == "Emanuele" && jaa.pw[x] == "Graziosi"){
