@@ -23,5 +23,3 @@ res.send('Salve ' + jaa.first_name[x] + " " + jaa.last_name[x]);
 x = x + 1;
 }
 )
-var server = app.listen(8081, "127.0.0.1");
-console.log("Server running at http://127.0.0.1:8081");
