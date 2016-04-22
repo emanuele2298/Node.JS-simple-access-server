@@ -30,18 +30,14 @@ body{
 background: lightblue url("Web-Design-Wallpapers.jpg") no-repeat fixed;
 }
 #reference{
-position: absolute;
-  left: 800px;
-  top: 100px;
+margin: auto;
 padding-left: 50px;
 padding-top: 50px;
 width: 135px;
 }
 #youtube{
-position:absolute;
+float: right;
 border-style: none;
-left:1280px;
-top:90px;
 }
 #compilation{
 color: red;
