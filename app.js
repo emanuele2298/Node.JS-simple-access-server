@@ -7,7 +7,6 @@ var jsonobj = fs.readFileSync('dati.json');
 var jaa = JSON.parse(jsonobj);
 app.get('/', function(req, res){
 res.sendFile(__dirname + "/" + "index.html");
-res.sendFile(__dirname + "/" + "index.css");
 }
 )
 app.get('/process_get', function(req, res){
