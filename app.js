@@ -19,12 +19,13 @@ fs.writeFileSync("dati.json", JSON.stringify(jaa));
 for (var i = 0; i < x; i++){
 if(jaa.user[x] == jaa.user[i] && jaa.pw[x] == jaa.pw[i]){
 res.sendFile(__dirname + "/doc/log.html");
+x = x + 1;
 }
 else{
 res.send('Salve ' + jaa.user[x]);
-}
-}
 x = x + 1;
+}
+}
 }
 )
 app.listen(app.get('port'));
