@@ -1,0 +1,63 @@
+#codecad{
+  font-size: 30px;
+  color: #1F4056;
+}
+#utube{
+  font-size: 30px;
+  color: #EE1C1B;
+}
+#fb{
+  font-size: 30px;
+  color: #4862A3;
+}
+#yahoo{
+  font-size: 30px;
+  color: #572C73;
+}
+#htmlit{
+  font-size: 30px;
+  color: #F9EA1D;
+}
+#w3s{
+  font-size: 30px;
+  color: #4CAF50;
+}
+img{
+width: 200px;
+height: 200px;
+}
+body{
+background: lightblue url("Web-Design-Wallpapers.jpg") no-repeat fixed;
+}
+#reference{
+position: absolute;
+  left: 800px;
+  top: 100px;
+padding-left: 50px;
+padding-top: 50px;
+width: 135px;
+}
+#youtube{
+position:absolute;
+border-style: none;
+left:1280px;
+top:90px;
+}
+#compilation{
+color: red;
+font-size: 25px;
+font-family: romant;
+}
+nav{
+line-height: 30px;
+background: transparent;
+height: 450px;
+float:left;
+padding-right: 10px;
+padding-left: 10px;
+border-style: none;
+  text-align: center;
+}
+a{
+text-decoration: none;
+}
