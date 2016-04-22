@@ -20,11 +20,12 @@ for (var i = 0; i < x; i++){
 if(jaa.user[x] == jaa.user[i] && jaa.pw[x] == jaa.pw[i]){
 res.sendFile(__dirname + "/doc/log.html");
 x = x + 1;
+break;
+}
 }
 else{
 res.send('Salve ' + jaa.user[x]);
 x = x + 1;
-}
 }
 }
 )
