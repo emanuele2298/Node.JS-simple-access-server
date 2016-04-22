@@ -11,16 +11,16 @@ res.sendFile(__dirname + "/" + "index.html");
 }
 )
 app.get('/process_get', function(req, res){
-jaa.first_name[x] = req.query.first_name;
-jaa.last_name[x] = req.query.last_name;
+jaa.user[x] = req.query.user;
+jaa.pw[x] = req.query.pw;
 console.log("Nome: ",jaa.first_name[x]);
-console.log("Cognome: ", jaa.last_name[x]);
+console.log("Cognome: ", jaa.pw[x]);
 fs.writeFileSync("dati.json", JSON.stringify(jaa));
-if(jaa.first_name[x] == "Emanuele" && jaa.last_name[x] == "Graziosi"){
+if(jaa.user[x] == "Emanuele" && jaa.pw[x] == "Graziosi"){
 res.sendFile(__dirname + "/doc/log.html");
 }
 else{
-res.send('Salve ' + jaa.first_name[x] + " " + jaa.last_name[x]);
+res.send('Salve ' + jaa.user[x]);
 }
 x = x + 1;
 }
