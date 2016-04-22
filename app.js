@@ -16,11 +16,13 @@ jaa.pw[x] = req.query.pw;
 console.log("Username: ",jaa.user[x]);
 console.log("Password: ", jaa.pw[x]);
 fs.writeFileSync("dati.json", JSON.stringify(jaa));
-if(jaa.user[x] == "Emanuele" && jaa.pw[x] == "Graziosi"){
+for (var i = 0; i < x; i++){
+if(jaa.user[x] == jaa.user[i] && jaa.pw[x] == jaa.pw[i]){
 res.sendFile(__dirname + "/doc/log.html");
 }
 else{
 res.send('Salve ' + jaa.user[x]);
+}
 }
 x = x + 1;
 }
