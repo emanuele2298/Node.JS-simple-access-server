@@ -23,10 +23,5 @@ x = x + 1;
 break;
 }
 }
-else{
-res.send('Salve ' + jaa.user[x]);
-x = x + 1;
 }
-}
-)
 app.listen(app.get('port'));
