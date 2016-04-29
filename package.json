@@ -1,8 +1,7 @@
-
 {
-  "name": "Node.JS Server",
+  "name": "node-js-getting-started",
   "version": "0.2.5",
-  "description": "A simple Node.js access server",
+  "description": "A sample Node.js app using Express 4",
   "engines": {
     "node": "5.9.1"
   },
