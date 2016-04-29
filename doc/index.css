@@ -1,6 +1,9 @@
 input{
 margin: 10px;
 }
+input:hover{
+ background-color:#EBECED;
+}
 #sub{
  height: 50px;
   width: 70px;
