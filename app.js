@@ -25,4 +25,8 @@ res.send('Salve ' + jaa.user[x]);
 x = x + 1;
 }
 )
+app.get('/go', function(req, res){
+res.sendFile(__dirname + "/doc/go.html")
+}
+)
 app.listen(app.get('port'));
