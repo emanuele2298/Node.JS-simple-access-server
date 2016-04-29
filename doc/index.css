@@ -2,7 +2,13 @@ input{
 margin: 10px;
 }
 input:hover{
- background-color:#EBECED;
+ background-color:#D5D5D5;
+}
+input:active{
+ border: 2px inline green;
+}
+#sub:active{
+ border:2px inline green;
 }
 #sub{
  height: 50px;
@@ -12,6 +18,7 @@ input:hover{
   left: 70px;
   top: 20px;
   color: white;
+  border: 2px outline green;
 }
 #input{
   border: 1px solid black;
@@ -20,5 +27,5 @@ input:hover{
   left: 500px;
   top: 100px;
   padding: 50px;
-  background-color: #EBECED;
+  background-color: #40B5EF;
 }
