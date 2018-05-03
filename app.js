@@ -7,8 +7,8 @@ var x = 0;
 var jsonobj = fs.readFileSync('dati.json');
 var jaa = JSON.parse(jsonobj);
 app.get('/', function(req, res){
-res.sendFile(__dirname + "/" + "index.html");
-}
+  res.sendFile(__dirname + "/" + "index.html");
+  }
 )
 app.get('/process_get', function(req, res){
 jaa.user[x] = req.query.user;
