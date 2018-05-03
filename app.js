@@ -20,7 +20,7 @@ if(jaa.user[x] == "Emanuele" && jaa.pw[x] == "Graziosi"){
 res.sendFile(__dirname + "/doc/log.html");
 }
 else{
-res.send('Salve ' + jaa.user[x]);
+res.send('Salute a voi ' + jaa.user[x]);
 }
 x = x + 1;
 }
